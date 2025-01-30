@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=id, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        option,select{
+            background-color: rgb(200, 164, 235);
+            color: white;
+        }
+        option:hover{
+            background-color: white;
+            color:  rgb(200, 164, 235);
+        }
+        label{
+            display: block;
+        }
+        .gender label{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <h1>User Information</h1>
+        <form action="x">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required>
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+            <label for="dob">Date of Birth</label>
+            <input type="date" name="dob" id="dob">
+            <label for="time">Time</label>
+            <input type="time" name="time" id="time">
+            <fieldset class="gender">
+                <legend>Gender</legend>
+                <label for="male"><input type="radio" name="gender" id="male" value="male">  Male</label>
+                <label for="male">  <input type="radio" name="gender" id="female" value="male">Female</label>
+            </fieldset>
+            <fieldset>
+                <legend>COURSE</legend>
+                <label for="WEBDEV"><input type="checkbox" name="WEBDEV" id="WEBDEV" value="WEBDEV">Web Development</label>
+                <label for="sw"><input type="checkbox" name="sw" id="sw" value="sw eng">SW Engineering</label>
+                <label for="movdev"><input type="checkbox" name="movdev" id="movdev" value="movdev">Mobile Development</label>
+                
+            </fieldset>
+            <label for="city">City</label>
+            <select name="city" id="city">
+                <option value=""> Select your city</option>
+                <option value="Karachi">Karachi</option>
+                <option value="Lahore">Lahore</option>
+                <option value="Islamabad">Imlamabad</option>
+            </select>
+        </form>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+       
+
+        
+    </div>
+</body>
+</html>
