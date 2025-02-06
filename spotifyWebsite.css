@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    display: flex;
+    background-color: black;
+    color: white;
+    margin: 0%;
+}
+.navbar h1{
+    color: white;
+    margin-left: 15px;
+    font-family: "Roboto Condensed", serif;
+}
+.navbar a{
+    color:white ;
+    text-align: left;
+    text-decoration: none;
+    
+}
+.content h1{
+  background-color: rgb(45, 190, 45);
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    font-family: "Poppins", serif;
+}
+.navbar ul{
+    padding: 0;
+    margin-left: 25px;
+}
+.navbar li{
+    margin-bottom: 5px;
+    padding: 20px;
+}
+
+.navbar{
+    flex: 1;
+    margin: 2px;
+    text-align: left;
+}
+.sheet{
+    flex: 4;
+    background-color: rgb(8, 8, 8);
+}
+.content{
+    /* flex: 3; */
+    height: 80vh;
+}
+.card{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    /* align-items: center; */
+    
+}
+.heading-bar{
+    display: flex;
+    padding: 10px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.song-text{
+  
+  height:20px
+}
+.song{
+   margin-right: 20px;
+   margin-left: 20px;
+border-radius: 3%;
+    background-color: rgb(17, 17, 17);
+    width: 100%;
+}
+.icon{
+    margin: 0;
+}
+.audio{
+    display: flex;
+    justify-content: center;
+}
+audio{
+   
+    padding: 10px;
+    filter: invert();
+}
+.bottom-song{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  
+}
+.song:hover{
+    background-color:rgb(115, 197, 115) ;
+    width: 90%;
+    height: 90%;
+}
+.heading-bar:hover{
+    background-color: darkgreen;
+}
+li:hover{
+    background-color: rgb(45, 190, 45) ;
+    color: black;
+}
+
