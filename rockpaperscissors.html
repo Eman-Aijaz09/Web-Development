@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Rock Paper Scissors</h1>
+    <p>Press a button to make your choice</p>
+    <button onclick="
+    let comparison= Math.random()
+    console.log('You chose Rock')
+    if(comparison<0.33){
+        console.log('The computer chose rock' )
+        console.log('draw');}
+    else if(comparison>0.33 && comparison<0.66){
+        console.log('The computer chose Paper')
+        console.log('you lose')
+    }   
+    else{
+        console.log('The computer chose scissors')
+        console.log('You Win')
+    }
+    ">Rock</button>
+    <button onclick="
+    comparison= Math.random()
+    console.log('You chose Paper')
+    if(comparison<0.33){
+        console.log('The computer chose rock')
+        console.log('You Win');
+        }
+    else if(comparison>0.33 && comparison<0.66){
+        console.log('The computer chose Paper')
+        console.log('Draw')
+    }   
+    else{
+        console.log('The computer chose scissors')
+        console.log('You lose')
+    }
+    ">Paper</button>
+    <button onclick="
+    console.log('You chose scissors')
+    comparison= Math.random()
+    if( comparison<0.33){
+        console.log('The computer chose rock')
+        console.log('You lose');
+    }
+    else if(comparison>0.33 && comparison<0.66){
+        console.log('The computer chose Paper')
+        console.log('You win')
+    }   
+    else{
+        console.log('The computer chose scissors')
+        console.log('iTS A DRAW')
+    }
+    ">Scissors</button>
+</body>
+</html>
