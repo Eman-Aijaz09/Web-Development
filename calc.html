@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: azure;
+            text-align: center;
+            margin-top: 5%;
+        }
+        button{
+            background-color:#d2d1d2;
+            color: black;
+            font-size: 25px;
+            border-radius: 60%;
+            padding:2.3%;
+            margin: 1%;
+            border: none;
+        }
+        button:active{
+            background-color:    rgb(156, 156, 156);
+            color: black;
+            font-size: 25px;
+            border-radius: 60%;
+            padding:2.3%;
+            margin: 1%;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let calculation=''
+    </script>
+    <div class="cal">
+        <div class="l1">
+            <button onclick="
+            calculation+=1;
+            console.log(calculation);
+            ">1</button>
+            <button onclick="
+            calculation+=2;
+            console.log(calculation);
+            ">2</button>
+            <button onclick="
+            calculation+=3;
+            console.log(calculation);
+            ">3</button>
+            <button onclick="
+            calculation+='+';
+            console.log(calculation);
+            ">+</button>
+        </div>
+        <div class="l2">
+            <button onclick="
+            calculation+=4;
+            console.log(calculation);
+            ">4</button>
+            <button onclick="
+            calculation+=5;
+            console.log(calculation);
+            ">5</button>
+            <button onclick="
+            calculation+=6;
+            console.log(calculation);
+            ">6</button>
+            <button onclick="
+            calculation+='-';
+            console.log(calculation);
+            ">-</button>
+        </div>
+        <div class="l3">
+            <button onclick="
+            calculation+=7;
+            console.log(calculation);
+            ">7</button>
+            <button onclick="
+            calculation+=8;
+            console.log(calculation);
+            ">8</button>
+            <button onclick="
+            calculation+=9;
+            console.log(calculation);
+            ">9</button>
+            <button onclick="
+            calculation+='/';
+            console.log(calculation);
+            ">/</button>
+        </div>
+        <div class="l4">
+            <button onclick="
+            calculation+='*';
+            console.log(calculation);
+            ">*</button>
+            <button onclick="
+            calculation+=0;
+            console.log(calculation);
+            ">0</button>
+            <button onclick="
+            calculation+='.';
+            console.log(calculation);
+            ">.</button>
+            <button onclick="
+            calculation=eval(calculation)
+            console.log(calculation)
+            calculation=''
+            ">=</button>
+        </div>
+    </div>
+    
+</body>
+</html>
