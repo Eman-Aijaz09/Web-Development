@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let person={
+            name:'eman',
+            age:20,
+            city:'karachi'
+        }
+        //forloop in objects
+        // for(let i in person){
+        //     console.log(`The ${i} is ${person[i]}`)
+        // }
+        console.log(person);
+        
+        let personStr=JSON.stringify(person);  //obj->string
+        console.log(personStr)
+
+        let person1=JSON.parse(personStr);  //string->obj
+        console.log(person1);
+
+        localStorage.setItem('mehh',personStr) //stores in local memory in meh key
+        localStorage.removeItem('mehh')
+        
+    </script>
+
+    
+</body>
+</html>
