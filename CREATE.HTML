@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 30px;
+            width: 30px;
+            border: 1px solid black;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <button id="button" onclick="addBox()">Add a new box</button>
+    <div class="main-box"></div>
+
+    <script>
+        function addBox(){
+            // let btn=document.querySelector('#button')
+            let box=document.createElement('div')  //create a div element
+            box.classList.add('box')
+            document.querySelector('.main-box').appendChild(box)
+
+        }
+    </script>
+</body>
+</html>
